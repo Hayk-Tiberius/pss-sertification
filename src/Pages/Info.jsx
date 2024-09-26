@@ -1,6 +1,6 @@
 
 
-const Company = () => {
+const Info = () => {
     return (
         <>
       
@@ -12,4 +12,4 @@ const Company = () => {
     )
 }
 
-export default Company
+export default Info

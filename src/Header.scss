@@ -1,0 +1,81 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: MontserratM;
+    src: url("./components/fonts/Montserrat-Medium.ttf");
+}
+
+@font-face {
+    font-family: MontserratR;
+    src: url("./components/fonts/Montserrat-Regular.ttf");
+}
+
+.header {
+
+    display: flex;
+    justify-self: center;
+    justify-content: space-evenly;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    span {
+        font-size: 1.5rem;
+    }
+
+    .logo {
+          .logo img {
+            display: block;
+          }
+          .logo__title {
+            display: block;
+            font-family: MontserratR;
+          }
+    }
+
+    .menu {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        height: 10.2vh;
+
+        .menu__hover {
+            position: relative;
+            color: black;
+            text-decoration: none;
+            
+          }
+        .menu__hover::after,
+        .menu__hover::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            width: 0%;
+            height: 2px;
+            background-color: black;
+            transition: all 400ms ease-in-out;
+        }
+        .menu__hover::after {
+            top: 0; 
+        }
+        .menu__hover::before {
+            bottom: 0; 
+        }
+        .menu__hover:hover::before, .menu__hover:hover::after {
+            width: 100%;
+            left: 0;
+          }
+    }
+
+    .menu span {
+        font-family: MontserratM;
+        margin-left: 4em;
+    }
+
+}
