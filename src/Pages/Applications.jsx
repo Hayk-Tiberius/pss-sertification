@@ -1,13 +1,10 @@
-
+import Header from "../tools/Header.jsx"
 
 const Applications = () => {
     return (
         <>
-      
-        <div className="main">
-
-            HI
-        </div>
+        <Header />
+        hi
         </>
     )
 }

@@ -1,7 +1,7 @@
 import React from "react"
-import logo from "../../pss-sertification/src/components/img/pss_logo.svg"
+import logo from "../components/img/pss_logo.svg"
 import { Link } from 'react-router-dom'
-import "./Header.scss"
+import "../../src/Header.scss"
 
 
 const Header = () => {

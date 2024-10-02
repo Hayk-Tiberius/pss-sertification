@@ -6,6 +6,7 @@ import Contact from './Pages/Contact.jsx'
 import Applications from './Pages/Applications.jsx'
 import Company from './Pages/Company.jsx'
 import Info from './Pages/Info.jsx'
+import Sertification from './Pages/Sertification.jsx';
 
 const PSSNavigation = () => (
   <Router>
@@ -15,6 +16,7 @@ const PSSNavigation = () => (
       <Route path="Applications.jsx" element={<Applications />}/>
       <Route path="Company.jsx" element={<Company />}/>
       <Route path="Info.jsx" element={<Info />}/>
+      <Route path="Sertification.jsx" element={<Sertification />}/>
     </Routes>
   </Router>
 )
