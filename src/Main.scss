@@ -1,0 +1,35 @@
+.sertification {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .sertification__title {
+        border: 0.3rem solid black;
+        padding: 1.2rem;
+        font-size: 2rem;
+        font-family: MontserratM;
+    }
+    .sertification__title:hover{
+        background-color: black;
+        color: rgb(233, 233, 233);
+        transition:  250ms linear 90ms;
+
+    }
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+.main_applications {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:3rem;
+    justify-content: space-around;
+    .main_applications_item {
+        width: 23vw;
+        height: 35vh;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+}
