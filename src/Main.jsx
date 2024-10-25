@@ -27,7 +27,10 @@ const Main = () => {
             </Link>
         </section>
         <section className="main_applications">
-            <div className="main_applications_item">Менеджмент качества</div>
+            <div className="main_applications_item">
+                <img src="" alt="" />
+                Менеджмент качества
+            </div>
             <div className="main_applications_item">Менеджмент безопасности</div>
             <div className="main_applications_item">Экологический менеджмент</div>
         </section>
