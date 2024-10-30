@@ -1,0 +1,12 @@
+.application_container {
+    margin-top: 5em ;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    .application_container_item {
+        padding: 1em;
+        width: 30vw;
+        height: 40vh;
+       
+}
+}

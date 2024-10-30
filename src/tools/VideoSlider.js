@@ -18,7 +18,7 @@ const VideoSlider = ({slides}) => {
             <video 
                 src={slides[currentIndex]} 
                 autoPlay 
-                style={{ width: "100%", height: "100%", position:"absolute"}} 
+                style={{ width: "100%", height: "100%", position:"absolute", objectFit:"cover"}} 
                 muted 
                 loop={false} 
                 onEnded={handleVideoEnd} 
