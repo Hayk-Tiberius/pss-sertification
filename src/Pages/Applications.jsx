@@ -28,7 +28,8 @@ const Applications = () => {
   
     const onSubmit = async (event) => {
       event.preventDefault();
-      setResult("Sending....");
+      console.log(event)
+      setResult("Отправка....");
       const formData = new FormData(event.target);
   
       formData.append("access_key", "b83076a4-0aa2-4eda-b923-33e119d8afcb");
@@ -41,41 +42,40 @@ const Applications = () => {
       const data = await response.json();
   
       if (data.success) {
-        setResult("Form Submitted Successfully");
+        setResult("Заявка была успешно отправлена");
         event.target.reset();
       } else {
         console.log("Error", data);
         setResult(data.message);
       }
+      console.log(formData)
     };
     return (
         <>
         <Header />
+        <form onSubmit={onSubmit}>
         <div className="application_container">
             <div className="application_container_item">
-                <Input size="large" placeholder="Наименование организации" prefix={<GlobalOutlined />} style={{ marginBottom: '1em' }} />
-                <Input size="large" placeholder="ФИО Ген. директора" prefix={<UserOutlined />} style={{ marginBottom: '1em' }} />
-                <Input size="large" placeholder="Юридический адрес" prefix={<HomeOutlined />} style={{ marginBottom: '1em' }} />
-                <Input size="large" placeholder="Фактический адрес" prefix={<HomeOutlined />} style={{ marginBottom: '1em' }} />
-                <TextArea size="large" rows={1} placeholder="Банковские реквизиты" prefix={<CreditCardOutlined />} style={{ marginBottom: '1em' }} />
-                <Input size="large" placeholder="ФИО контактного лица" prefix={<UserSwitchOutlined />} style={{ marginBottom: '1em' }} />
-                <Input size="large" placeholder="Телефон" prefix={<PhoneOutlined />} style={{ marginBottom: '1em' }} />
-                <Input size="large" placeholder="E-mail" prefix={<MailOutlined />} style={{ marginBottom: '1em' }} />
-                <Input size="large" placeholder="Сайт" prefix={<ChromeOutlined />} style={{ marginBottom: '1em' }} />
-                <Select labelRender={labelRender} defaultValue="1" style={{ width: '100%', marginBottom: '1em' }} options={options} />
-                <Input size="large" placeholder="Месяц и год внедрения систем менеджмента: ММ/ГГГГ" prefix={<FieldTimeOutlined />} style={{ marginBottom: '1em' }} />
-                <Input size="large" placeholder="Общая численность работающих (включая филиалы):" prefix={<TeamOutlined />} style={{ marginBottom: '1em' }} />
-                <div>
-      <form onSubmit={onSubmit}>
-
-        <button type="submit" name="access_key" value="b83076a4-0aa2-4eda-b923-33e119d8afcb">Submit Form</button>
-
-      </form>
-      <span>{result}</span>
-
-    </div>
-            </div>
+                <Input name="Наименование организации" size="large" placeholder="Наименование организации" prefix={<GlobalOutlined />} style={{ marginBottom: '1em' }} />
+                <Input name="ФИО Ген. директора" size="large" placeholder="ФИО Ген. директора" prefix={<UserOutlined />} style={{ marginBottom: '1em' }} />
+                <Input name="Юридический адрес" size="large" placeholder="Юридический адрес" prefix={<HomeOutlined />} style={{ marginBottom: '1em' }} />
+                <Input name="Фактический адрес" size="large" placeholder="Фактический адрес" prefix={<HomeOutlined />} style={{ marginBottom: '1em' }} />
+                <TextArea name="Банковские реквизиты" size="large" rows={1} placeholder="Банковские реквизиты" prefix={<CreditCardOutlined />} style={{ marginBottom: '1em' }} />
+                <Input name="ФИО контактного лица" size="large" placeholder="ФИО контактного лица" prefix={<UserSwitchOutlined />} style={{ marginBottom: '1em' }} />
+                <Input name="Телефон" size="large" placeholder="Телефон" prefix={<PhoneOutlined />} style={{ marginBottom: '1em' }} />
+                <Input name="E-mail" size="large" placeholder="E-mail" prefix={<MailOutlined />} style={{ marginBottom: '1em' }} />
+                <Input name="Сайт" size="large" placeholder="Сайт" prefix={<ChromeOutlined />} style={{ marginBottom: '1em' }} />
+                <Select name="Объект сертификации/аттестации/декларации" labelRender={labelRender} defaultValue="1" style={{ width: '100%', marginBottom: '1em' }} options={options} />
+                <Input name="Месяц и год внедрения систем менеджмента: ММ/ГГГГ" size="large" placeholder="Месяц и год внедрения систем менеджмента: ММ/ГГГГ" prefix={<FieldTimeOutlined />} style={{ marginBottom: '1em' }} />
+                <Input name="Общая численность работающих (включая филиалы):" size="large" placeholder="Общая численность работающих (включая филиалы):" prefix={<TeamOutlined />} style={{ marginBottom: '1em' }} />
+                <button style={{color: "white",cursor: "pointer", borderRadius: "1rem", width:"7vw",height:"3.7vh", background: "#111", border:"none"}} 
+                    type="submit" name="access_key" value="b83076a4-0aa2-4eda-b923-33e119d8afcb">Отправить заявку
+                </button>
+                <span>{result}</span>
+              </div> 
+    
         </div>
+        </form>
         </>
     )
 }
