@@ -1,18 +1,34 @@
 import React from "react";
+import { Link } from "react-router-dom"
 import "./CompanyHeader.scss"
 
-const CompanyHeader = () => {
+
+const  CompanyHeader = () => {
     return (
         <>
             <nav className="menu">
                 <ul className="menu-list">
-                    <li>Аккредитация</li>
-                    <li>Политика</li>
-                    <li>Структура</li>
-                    <li>Руководитель</li>
-                    <li>Партнеры</li>
-                    <li>История</li>
-                    <li>Сотрудники</li>
+                    <Link to="/Accreditations">
+                        <li>Аккредитация</li>
+                    </Link>
+                    <Link to="/Policy">
+                        <li>Политика</li>
+                    </Link>
+                    <Link to="/Structure">
+                        <li>Структура</li>
+                    </Link>
+                    <Link to="/Director">
+                        <li>Руководитель</li>
+                    </Link>
+                    <Link to="/Partners">
+                        <li>Партнеры</li>
+                    </Link>
+                    <Link to="/History">
+                        <li>История</li>
+                    </Link>
+                    <Link to="/Staff">
+                        <li>Сотрудники</li>
+                    </Link>
                 </ul>
             </nav>
         </>

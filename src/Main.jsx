@@ -18,11 +18,12 @@ const Main = () => {
         <>
         <Header />
         <section className="slider">
+            
             <VideoSlider slides={slides} />
         
         </section>
         <section className="sertification">
-            <Link to="Sertification.jsx">
+            <Link to="/Sertification">
             <div className="sertification__title">О сертификации</div>
             </Link>
         </section>

@@ -15,16 +15,16 @@ const Header = () => {
             </Link>
         </div>
         <div className="menu">
-            <Link to="Company.jsx">
+            <Link to="/Company">
                 <span className="menu__hover">О компании</span>
             </Link>
-            <Link to="Info.jsx">
+            <Link to="/Info">
                 <span className="menu__hover">Информация</span>
             </Link>
-            <Link to="Applications.jsx">
+            <Link to="/Applications">
                 <span className="menu__hover">Заявки на услуги</span>
             </Link>
-            <Link to="/Contact.jsx">
+            <Link to="/Contact">
                 <span className="menu__hover">Контакты</span>
             </Link>
         </div>
