@@ -1,0 +1,12 @@
+.accredititaon__title {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    a {
+        border-bottom: 0.2rem dashed black;
+    }
+    a:hover {
+        color: rgb(25, 0, 255);
+        border-bottom: 0.2rem dashed rgb(25, 0, 255);
+    }
+}

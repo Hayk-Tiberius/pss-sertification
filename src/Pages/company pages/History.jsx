@@ -8,6 +8,7 @@ const History = () => {
         <>
         <Header/>
         <CompanyHeader/>
+
         </>
     )
 }

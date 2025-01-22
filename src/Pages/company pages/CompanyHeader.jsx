@@ -26,9 +26,7 @@ const  CompanyHeader = () => {
                     <Link to="/History">
                         <li>История</li>
                     </Link>
-                    <Link to="/Staff">
-                        <li>Сотрудники</li>
-                    </Link>
+                 
                 </ul>
             </nav>
         </>

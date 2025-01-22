@@ -21,15 +21,56 @@
 }
 
 .main_applications {
+    
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap:3rem;
-    justify-content: center;
+    gap: 6.5rem;
+    justify-content: center; 
+    align-items: center; 
+    width: fit-content;
+    margin: 0 auto; 
+    
     .main_applications_item {
-        width: 23vw;
-        height: 35vh;
+        border-radius: 1.7rem;
+        background-color: rgb(2, 66, 161);
+        width: 18vw;
+        height: 40vh;
         display: flex;
         justify-content: center;
-        align-items: end;
+        align-items: center;
+        flex-direction: column;
+        color: rgb(238, 238, 238);
+        gap: 3.3rem;
+        transition:  250ms linear 90ms; 
+        img {
+            width: 6vw;
+            transition:  250ms linear 90ms;
+        }
+    }
+
+    .main_applications_item:hover{
+        width: 20vw;
+        height: 42vh;
+        transition:  250ms linear 90ms;
+        img {
+            width: 8vw;
+            transition:  250ms linear 90ms;
+        }
+        }
+
+    span {
+        margin: 0.6rem 3rem 0;
+        border: 0.15rem solid rgb(238, 238, 238);
+        padding: 0.8rem;
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: MontserratR;
+    }
+
+    span:hover {
+        background-color: rgb(238, 238, 238);
+        color: rgb(2, 66, 161);
+        transition:  250ms linear 90ms;
+        cursor: pointer;
     }
 }
