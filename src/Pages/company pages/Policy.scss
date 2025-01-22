@@ -9,8 +9,57 @@ main{
   
     text-align: center;
     width: 40vw;
-    line-height: 2.5rem;
+    line-height: 2.1rem;
     font-weight: 800;
     font-size: 1.44rem;
     font-family: MontserratM;
+    .main__text1 {
+        display: block;
+        
+    }
+}
+
+.common__text {
+    gap: 4rem;
+    font-size: 1.11rem;
+    font-family: MontserratR;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    .common__text1 {
+        width: 33vw;
+        border: 0.2rem solid rgb(255, 255, 255);
+        border-radius: 3rem;
+        box-shadow: 0 0 3rem 0.4rem rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+        line-height: 1.7rem;
+        padding: 2rem;
+        text-align: justify;
+    }
+    .common__text2 {
+        width: 33vw;
+        border: 0.2rem solid rgb(255, 255, 255);
+        border-radius: 3rem;
+        box-shadow: 0 0 3rem 0.4rem rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+        padding: 2rem;
+        line-height: 1.7rem;
+        text-align: justify;
+    }
+    span {
+        display: block;
+        text-align: center;
+        line-height: 0.4rem;
+        font-weight: 800;
+        font-size: 1.22rem;
+        font-family: MontserratM;
+    }
+    ul {
+        line-height: 0.4rem;
+        padding-left: 2.3rem;
+        li {
+            line-height: 1.7rem;
+        }
+    }
+
 }
