@@ -15,6 +15,9 @@ import Director from './Pages/company pages/Director.jsx'
 import Partners from './Pages/company pages/Partners.jsx'
 import History from './Pages/company pages/History.jsx'
 import Staff from './Pages/company pages/Staff.jsx'
+import QualityManagment from './Pages/sertification pages/QualityManagment.jsx';
+import EcologyManagment from './Pages/sertification pages/EcologyManagment.jsx';
+import SecurityManagment from './Pages/sertification pages/SecurityManagment.jsx';
 
 
 const PSSNavigation = () => (
@@ -34,6 +37,9 @@ const PSSNavigation = () => (
       <Route path="/Partners" element={<Partners />}/>
       <Route path="/History" element={<History />}/>
       <Route path="/Staff" element={<Staff />}/>
+      <Route path="/QualityManagment" element={<QualityManagment />}/>
+      <Route path="/EcologyManagment" element={<EcologyManagment />}/>
+      <Route path="/SecurityManagment" element={<SecurityManagment />}/>
     </Routes>
   </Router>
 )

@@ -1,0 +1,40 @@
+.main__contact {
+    display: flex;
+    text-align:justify;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   .contact__text{
+    border: 0.1rem white solid;
+    box-shadow: 0 0 3rem 0.4rem rgba(0, 0, 0, 0.3);;
+    font-size: 1.11rem;
+    overflow: hidden;
+    padding: 2rem;
+    border-radius: 3rem;
+    font-family: MontserratR;
+    line-height: 1.77rem;
+    margin-top: 3rem;
+    .contact__title{
+        text-align: center;
+        align-items: center;
+        display: block;
+        font-weight: 700;
+        font-size: 1.44rem;
+    }
+    .contact__title2{
+        text-align: center;
+        align-items: center;
+        display: block;
+        font-weight: 700;
+        font-size: 1.44rem;
+    }
+    .yandex__map {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+   }
+    
+}

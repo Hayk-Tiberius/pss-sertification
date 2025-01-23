@@ -11,6 +11,7 @@ import photo2 from "..//src/components/img/main__img/quality.png"
 import "./Slider.scss";
 import "./Main.scss";
 
+
 const Main = () => {
     const slides = [
         video1,
@@ -31,18 +32,26 @@ const Main = () => {
             </Link>
         </section>
         <section className="main_applications">
+            <Link to="/QualityManagment">
             <div className="main_applications_item">
                 <img src={photo1} alt="" />
-                <span>Менеджмент качества</span>
+                
+                    <span>Менеджмент качества</span>
+                
             </div>
-            <div className="main_applications_item">
-                <img src={photo2} alt="" />
-                <span>Менеджмент безопасности</span>
+            </Link>
+            <Link to="/SecurityManagment">
+                <div className="main_applications_item">
+                    <img src={photo2} alt="" />
+                    <span>Менеджмент безопасности</span>
                 </div>
-            <div className="main_applications_item">
-                <img src={photo3} alt="" />
-                <span>Экологический менеджмент</span>
+            </Link>
+            <Link to="/EcologyManagment">
+                <div className="main_applications_item">
+                    <img src={photo3} alt="" />
+                    <span>Экологический менеджмент</span>
                 </div>
+            </Link>
         </section>
         </>
     )
