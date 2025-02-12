@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../tools/Header.jsx"
+
 import "./Applications.scss"
 import { UserOutlined, GlobalOutlined,HomeOutlined,TeamOutlined, CreditCardOutlined,PhoneOutlined,MailOutlined,ChromeOutlined,FieldTimeOutlined,UserSwitchOutlined  } from '@ant-design/icons';
 import { Input, Select } from 'antd';
@@ -76,6 +77,7 @@ const Applications = () => {
     
         </div>
         </form>
+        
         </>
     )
 }

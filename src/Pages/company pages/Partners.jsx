@@ -1,5 +1,6 @@
 import React from "react"
 import Header from "../../tools/Header"
+import Footer from "../../tools/Footer";
 import CompanyHeader from "./CompanyHeader"
 import "../company pages/Partners.scss"
 import photo1 from "../../components/img/partners_logo/1nostr.png"
@@ -31,6 +32,7 @@ const Partners = () => {
             </div>
             
         </article>
+        <Footer />
         </>
     )
 }

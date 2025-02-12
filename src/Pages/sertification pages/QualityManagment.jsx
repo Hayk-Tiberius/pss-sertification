@@ -1,13 +1,12 @@
 import React from "react"
 import Header from "../../tools/Header"
-
+import Footer from "../../tools/Footer";
 
 const QualityManagment = () => {
     return ( 
         <>
         <Header/>
-        2
-
+        <Footer />
         </>
     )
 }

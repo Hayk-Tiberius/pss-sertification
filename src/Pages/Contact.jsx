@@ -2,6 +2,7 @@ import React from 'react';
 import { YMaps, Map, Placemark } from '@pbe/react-yandex-maps';
 import Header from "../tools/Header.jsx"
 import "../Pages/Contact.scss"
+import Footer from "../tools/Footer";
 
 const Contact = () => {
     const defaultState = {
@@ -45,6 +46,7 @@ const Contact = () => {
                 </div>    
             </div>
         </article>
+        <Footer />
         </>
     )
 }

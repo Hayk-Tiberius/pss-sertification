@@ -1,5 +1,6 @@
 import React from "react"
 import Header from "../../tools/Header"
+import Footer from "../../tools/Footer";
 import CompanyHeader from "./CompanyHeader"
 import "../company pages/Policy.scss"
 
@@ -52,6 +53,7 @@ const Policy = () => {
             </div>
         </section>
         </main>
+        <Footer />
         </>
     )
 }

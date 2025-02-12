@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import VideoSlider from "./tools/VideoSlider.js"
 import Header from "./tools/Header";
+import Footer from "./tools/Footer";
 import video1 from "./components/video/slider1.mp4"
 import video2 from "./components/video/slider2.mp4"
 import video3 from "./components/video/slider3.mp4"
@@ -53,6 +54,7 @@ const Main = () => {
                 </div>
             </Link>
         </section>
+        <Footer />
         </>
     )
 }

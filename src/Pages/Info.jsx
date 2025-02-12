@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Header from "../tools/Header.jsx";
+import Footer from "../tools/Footer";
 import "./Info.scss";
 
 const Info = () => {
@@ -106,6 +107,7 @@ const Info = () => {
                     <br />
                 </section>
             </main>
+            <Footer />
         </>
     );
 };

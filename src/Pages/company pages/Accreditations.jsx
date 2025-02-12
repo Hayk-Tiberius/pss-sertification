@@ -1,5 +1,6 @@
 import React from "react"
 import Header from "../../tools/Header"
+import Footer from "../../tools/Footer";
 import CompanyHeader from "./CompanyHeader"
 import "../company pages/Accreditation.scss"
 
@@ -17,6 +18,7 @@ const Accreditations = () => {
                 </a>
            </div>
         </section>
+        <Footer />
         </>
     )
 }
