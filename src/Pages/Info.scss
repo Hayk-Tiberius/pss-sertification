@@ -1,3 +1,19 @@
 #more {
     display: none;
 }
+
+.info__main {
+    display: flex;
+    flex-direction: row;
+    .info__section {
+        width: 50%;
+
+    }
+    .info__text {
+        display: block;
+        font-size: 1rem;
+        text-align: justify;
+        font-family: 'Times New Roman', Times, serif;
+        line-height: 0.8rem;
+    }
+}
