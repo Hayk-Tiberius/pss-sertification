@@ -3,14 +3,15 @@ import Header from "../tools/Header";
 import Footer from "../tools/Footer";
 import "./Sertification.scss";
 import { Carousel } from "antd";
+import file_img from "../components/img/main__img/file_logo.png"
 
-import poryadok_zhalob  from "../components/files/serification/poryadok_zhalob.pdf"
-import sertification_schema  from "../components/files/serification/sertification_schema.pdf"
-import politic_conf  from "../components/files/serification/politic_conf.pdf"
-import politic_non_involve  from "../components/files/serification/politic_non_invol.pdf"
-import politic_cancel  from "../components/files/serification/politic_cancel.pdf"
-import politic_accordance  from "../components/files/serification/politic_accordance.pdf"
-import politic_distance  from "../components/files/serification/politic_distance.pdf"
+import poryadok_zhalob from "../components/files/serification/poryadok_zhalob.pdf"
+import sertification_schema from "../components/files/serification/sertification_schema.pdf"
+import politic_conf from "../components/files/serification/politic_conf.pdf"
+import politic_non_involve from "../components/files/serification/politic_non_invol.pdf"
+import politic_cancel from "../components/files/serification/politic_cancel.pdf"
+import politic_accordance from "../components/files/serification/politic_accordance.pdf"
+import politic_distance from "../components/files/serification/politic_distance.pdf"
 
 const files = [
     { name: "Порядок жалоб", link: poryadok_zhalob },
@@ -29,7 +30,8 @@ const Sertification = () => {
                 {files.slice(startIndex, startIndex + 3).map((file, index) => (
                     <div key={index} style={{ width: '30%' }}>
                         <a href={file.link} onClick={(e) => { e.preventDefault(); window.open(file.link, '_blank'); }}>
-                            Скачать файл: {file.name}
+                            <img src={file_img} style={{ width: "10rem" }} />
+                            {file.name}
                         </a>
                     </div>
                 ))}
