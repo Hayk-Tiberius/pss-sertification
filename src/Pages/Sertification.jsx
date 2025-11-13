@@ -1,7 +1,6 @@
 import React from "react";
 import Header from "../tools/Header";
 import Footer from "../tools/Footer";
-import "./Sertification.scss";
 import { Carousel } from "antd";
 import file_img from "../components/img/main__img/file_logo.png"
 
@@ -53,7 +52,7 @@ const Sertification = () => {
             </div>
 
             <div style={{ width: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>
-                <Carousel autoplay dotPosition="bottom" effect="scrollx" style={{ width: "60vw", height: "45vh", border: "1px solid black" }}>
+                <Carousel autoplay dotPosition="bottom" effect="scrollx" style={{ width: "60vw", height: "45vh" }}>
                     {[...Array(totalSlides)].map((_, index) => (
                         <div key={index}>
                             {renderFilesGroup(index)}
