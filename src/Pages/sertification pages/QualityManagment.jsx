@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom";
 import Header from "../../tools/Header"
 import Footer from "../../tools/Footer";
 import quality_img from "../../components/img/sertificate_img/sys_m_k_inv.png"
@@ -11,9 +12,11 @@ const QualityManagment = () => {
                 <span style={{ fontSize: "1.8rem" }}>Система менеджмента качества</span>
                 <img src={quality_img} alt="" />
                 <span>ГОСТ ISO 9001 (ISO 9001)</span>
-                <section>
-                    <button>click</button>
-                    <button>click</button>
+                <section className="sertification">
+                    <Link to="/Applications">
+                        <button style={{ borderRadius: "2rem" }} className="sertification__title">Оформить заявку</button>
+                    </Link>
+                    <button style={{ borderRadius: "2rem" }} className="sertification__title">Документация</button>
 
                 </section>
                 Системы менеджмента качества – это системы менеджмента для руководства и управления организацией, для обеспечения способности всегда поставлять продукцию, отвечающую требованиям потребителей и соответствующим обязательным (нормативным) требованиям, а также повышения удовлетворенности потребителей.

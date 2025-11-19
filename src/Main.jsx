@@ -21,40 +21,40 @@ const Main = () => {
     ]
     return (
         <>
-        <Header />
-        <section className="slider">
-            
-            <VideoSlider slides={slides} />
-        
-        </section>
-        <section className="sertification">
-            <Link to="/Sertification">
-            <div className="sertification__title">О сертификации</div>
-            </Link>
-        </section>
-        <section className="main_applications">
-            <Link to="/QualityManagment">
-            <div className="main_applications_item">
-                <img src={photo1} alt="" />
-                
-                    <span>Менеджмент качества</span>
-                
-            </div>
-            </Link>
-            <Link to="/SecurityManagment">
-                <div className="main_applications_item">
-                    <img src={photo2} alt="" />
-                    <span>Менеджмент безопасности</span>
-                </div>
-            </Link>
-            <Link to="/EcologyManagment">
-                <div className="main_applications_item">
-                    <img src={photo3} alt="" />
-                    <span>Экологический менеджмент</span>
-                </div>
-            </Link>
-        </section>
-        <Footer />
+            <Header />
+            <section className="slider">
+
+                <VideoSlider slides={slides} />
+
+            </section>
+            <section className="sertification">
+                <Link to="/Sertification">
+                    <div className="sertification__title">О сертификации</div>
+                </Link>
+            </section>
+            <section className="main_applications">
+                <Link to="/QualityManagment">
+                    <div className="main_applications_item">
+                        <img src={photo1} alt="" />
+
+                        <span>Менеджмент качества</span>
+
+                    </div>
+                </Link>
+                <Link to="/SecurityManagment">
+                    <div className="main_applications_item">
+                        <img src={photo2} alt="" />
+                        <span>Менеджмент безопасности</span>
+                    </div>
+                </Link>
+                <Link to="/EcologyManagment">
+                    <div className="main_applications_item">
+                        <img src={photo3} alt="" />
+                        <span>Экологический менеджмент</span>
+                    </div>
+                </Link>
+            </section>
+            <Footer />
         </>
     )
 }

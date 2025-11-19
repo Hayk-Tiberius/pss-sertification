@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom";
 import Header from "../../tools/Header";
 import Footer from "../../tools/Footer";
 import security_img from "../../components/img/sertificate_img/sys_m_o_z_o_b_t_inv.png"
@@ -11,9 +12,11 @@ const SecurityManagment = () => {
                 <span style={{ fontSize: "1.8rem" }}>Системы менеджмента охраны здоровья <br />и обеспечения безопасности труда</span>
                 <img src={security_img} alt="" />
                 <span>ГОСТ Р ИСО 45001-2020</span>
-                <section>
-                    <button>click</button>
-                    <button>click</button>
+                <section className="sertification">
+                    <Link to="/Applications">
+                        <button style={{ borderRadius: "2rem" }} className="sertification__title">Оформить заявку</button>
+                    </Link>
+                    <button style={{ borderRadius: "2rem" }} className="sertification__title">Документация</button>
 
                 </section>
                 Организации всех видов проявляют растущую заинтересованность в том, чтобы достичь хороших показателей деятельности в области охраны здоровья и обеспечения безопасности труда. Они делают это в свете растущей требовательности со стороны законодательства, совершенствования экономической политики и других мер, поддерживающих передовой опыт в области охраны здоровья и обеспечения безопасности труда.
