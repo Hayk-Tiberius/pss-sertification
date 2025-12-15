@@ -1,13 +1,8 @@
 import {useState}  from "react";
 import Header from "../tools/Header";
 import Footer from "../tools/Footer";
-<<<<<<< HEAD
-import { Carousel } from "antd";
-import file_img from "../components/img/main__img/file_logo.png"
-=======
-import "./Sertification.scss";
 
->>>>>>> c9c7877 (aaa)
+
 
 import poryadok_zhalob from "../components/files/serification/poryadok_zhalob.pdf"
 import sertification_schema from "../components/files/serification/sertification_schema.pdf"
@@ -38,10 +33,6 @@ const Sertification = () => {
             {files.map((file) => (
                 <div style={{ width: '30%' }}>
                         <a href={file.link} onClick={(e) => { e.preventDefault(); window.open(file.link, '_blank'); }}>
-<<<<<<< HEAD
-                            <img src={file_img} style={{ width: "10rem" }} />
-=======
->>>>>>> c9c7877 (aaa)
                             {file.name}
                         </a>
                 </div>
@@ -67,17 +58,7 @@ const Sertification = () => {
             </div>
 
             <div style={{ width: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>
-<<<<<<< HEAD
-                <Carousel autoplay dotPosition="bottom" effect="scrollx" style={{ width: "60vw", height: "45vh" }}>
-                    {[...Array(totalSlides)].map((_, index) => (
-                        <div key={index}>
-                            {renderFilesGroup(index)}
-                        </div>
-                    ))}
-                </Carousel>
-=======
                 {renderFilesGroup()}
->>>>>>> c9c7877 (aaa)
             </div>
             <Footer />
         </>

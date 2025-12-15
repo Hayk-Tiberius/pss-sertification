@@ -1,6 +1,6 @@
 // Секция для корректировки тэгов
 
-a{
+a {
     color: inherit;
     text-decoration: none;
 }
@@ -16,32 +16,34 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
+
     .sertification__title {
         border: 0.3rem solid black;
         padding: 1.2rem;
         font-size: 2rem;
         font-family: MontserratM;
     }
-    .sertification__title:hover{
+
+    .sertification__title:hover {
         background-color: black;
         color: rgb(233, 233, 233);
-        transition:  250ms linear 90ms;
+        transition: 250ms linear 90ms;
 
     }
-    
+
 }
 
 
 .main_applications {
-    
+
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 6.5rem;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
     width: fit-content;
-    margin: 0 auto; 
-    
+    margin: 0 auto;
+
     .main_applications_item {
         border-radius: 1.7rem;
         background-color: rgb(2, 66, 161);
@@ -53,22 +55,24 @@ li {
         flex-direction: column;
         color: rgb(238, 238, 238);
         gap: 3.3rem;
-        transition:  250ms linear 90ms; 
+        transition: 250ms linear 90ms;
+
         img {
             width: 6vw;
-            transition:  250ms linear 90ms;
+            transition: 250ms linear 90ms;
         }
     }
 
-    .main_applications_item:hover{
+    .main_applications_item:hover {
         width: 20vw;
         height: 42vh;
-        transition:  250ms linear 90ms;
+        transition: 250ms linear 90ms;
+
         img {
             width: 8vw;
-            transition:  250ms linear 90ms;
+            transition: 250ms linear 90ms;
         }
-        }
+    }
 
     span {
         margin: 0.6rem 3rem 0;
@@ -82,11 +86,11 @@ li {
     span:hover {
         background-color: rgb(238, 238, 238);
         color: rgb(2, 66, 161);
-        transition:  250ms linear 90ms;
+        transition: 250ms linear 90ms;
         cursor: pointer;
     }
 }
- 
+
 //СТРАНИЦА "О Сертификации"
 
 .sertification_title {
@@ -106,4 +110,28 @@ li {
     width: 100%;
     font-size: 1.1rem;
     margin-bottom: 6vh;
+}
+
+// Страница о Аккредитации
+
+.accredititaon__title {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+
+    a {
+        border-bottom: 0.2rem dashed black;
+    }
+
+    a:hover {
+        color: rgb(25, 0, 255);
+        border-bottom: 0.2rem dashed rgb(25, 0, 255);
+    }
+}
+
+.accredititaon__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+
 }
