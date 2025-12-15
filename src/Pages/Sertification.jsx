@@ -2,8 +2,6 @@ import {useState}  from "react";
 import Header from "../tools/Header";
 import Footer from "../tools/Footer";
 
-
-
 import poryadok_zhalob from "../components/files/serification/poryadok_zhalob.pdf"
 import sertification_schema from "../components/files/serification/sertification_schema.pdf"
 import politic_conf from "../components/files/serification/politic_conf.pdf"
@@ -29,7 +27,7 @@ const Sertification = () => {
 
     const renderFilesGroup = () => {
         return (
-        <div className="files_item" style={{ display: 'flex', justifyContent: 'space-around', width: '100%' }}>
+        <div className="files_item" style={{  width: '100%' }}>
             {files.map((file) => (
                 <div style={{ width: '30%' }}>
                         <a href={file.link} onClick={(e) => { e.preventDefault(); window.open(file.link, '_blank'); }}>
