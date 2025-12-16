@@ -12,7 +12,7 @@ const Contact = () => {
     return (
         <>
         <Header />
-        <article className='main__contact'>
+        <main className='main__contact'>
             <div className='contact__text'>
             <span className='contact__title'>Контакты</span><br/>
 
@@ -45,8 +45,8 @@ const Contact = () => {
                     </YMaps>
                 </div>    
             </div>
-        </article>
-        <Footer />
+            <Footer />
+        </main>
         </>
     )
 }

@@ -17,6 +17,7 @@ const accreditaions_files = [
 const Accreditations = () => {
     return (
         <>
+            <main>
             <Header />
             <CompanyHeader />
             <section>
@@ -41,6 +42,7 @@ const Accreditations = () => {
                 </div>
             </section>
             <Footer />
+            </main>
         </>
     )
 }

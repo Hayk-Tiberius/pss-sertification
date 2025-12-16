@@ -12,7 +12,7 @@ const Partners = () => {
         <>
         <Header/>
         <CompanyHeader/>
-        <article>
+        <main>
             <span className="partners__title">
                 Профессиональные объединения (партнерства):
             </span>
@@ -31,7 +31,7 @@ const Partners = () => {
                 </div>
             </div>
             
-        </article>
+        </main>
         <Footer />
         </>
     )

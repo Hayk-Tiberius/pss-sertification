@@ -2,9 +2,8 @@ import React from "react"
 import Header from "../../tools/Header"
 import Footer from "../../tools/Footer";
 import CompanyHeader from "./CompanyHeader"
-import "../../Pages/company pages/Structure.scss"
 import photo1 from "../../components/img/structure/Structure.PNG"
-
+import "../../Main.scss"
 
 const Structure = () => {
     return ( 
