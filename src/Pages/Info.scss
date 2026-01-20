@@ -1,19 +1,14 @@
-#more {
-    display: none;
+.content {
+  white-space: pre-line;
 }
 
-.info__main {
+.item {
+  background-color: rgb(0, 0, 0);
+  margin-bottom: 0.4rem;
+  padding: 0.6rem 1.1rem;
+  color: white;
+  .title {
     display: flex;
-    flex-direction: row;
-    .info__section {
-        width: 50%;
-
-    }
-    .info__text {
-        display: block;
-        font-size: 1rem;
-        text-align: justify;
-        font-family: 'Times New Roman', Times, serif;
-        line-height: 0.8rem;
-    }
+    justify-content: space-between;
+  }
 }
