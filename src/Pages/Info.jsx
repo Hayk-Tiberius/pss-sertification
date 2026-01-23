@@ -69,7 +69,7 @@ const Info = () => {
               <div className="title">
                 <h2>{item.question}</h2>
               </div>
-              <div className="content">{}</div>
+              <div className="content">{item.answer}</div>
             </div>
           ))}
         </section>
