@@ -1,14 +1,39 @@
+.wrapper {
+  display: flex;
+}
+
 .content {
   white-space: pre-line;
+  color: black;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.content.show {
+  max-height: 1000px;
+  transition: max-height 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .item {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+
   margin-bottom: 0.4rem;
   padding: 0.6rem 1.1rem;
   color: white;
   .title {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    color: black;
+    border: 0.2rem solid black;
+    border-radius: 3rem;
+    padding: 1rem;
+    cursor: pointer;
+  }
+  .title:hover {
+    background-color: black;
+    color: rgb(233, 233, 233);
+    transition: 300ms linear 90ms;
   }
 }

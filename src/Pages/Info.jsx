@@ -48,30 +48,71 @@ const info_data2 = [
 ];
 
 const Info = () => {
+  const [selected, setSelected] = useState(null);
+  const [selected2, setSelected2] = useState(null);
+
+  // Для первого блока
+  const toggle = (i) => {
+    if (selected === i) {
+      return setSelected(null);
+    }
+
+    setSelected(i);
+  };
+
+  // Для второго блока
+  const toggle2 = (i) => {
+    if (selected2 === i) {
+      return setSelected2(null);
+    }
+
+    setSelected2(i);
+  };
+
   return (
     <>
       <Header />
       <main className="wrapper">
-        <section className="accordion">
-          {info_data1.map((item, i) => (
-            <div className="item">
-              <div className="title">
-                <h2>{item.question}</h2>
-                <span>+</span>
+        <section
+          style={{
+            textAlign: "justify",
+            width: "50%",
+            border: "0.1rem white solid",
+            boxShadow: "0 0 3rem 0.4rem rgba(0,0,0,0.3)",
+            fontSize: "1.11rem",
+            overflow: "hidden",
+            padding: "1.2rem 2rem 2rem 2rem",
+            borderRadius: "3rem",
+          }}
+        >
+          <section className="accordion">
+            <span>
+              <h2>Для заявителей:</h2>
+            </span>
+            {info_data1.map((item, i) => (
+              <div className="item" onClick={() => toggle(i)}>
+                <div className="title">
+                  <h2>{item.question}</h2>
+                  <span>{selected === i ? "-" : "+"}</span>
+                </div>
+                <div className={selected === i ? "content show" : "content"}>{item.answer}</div>
               </div>
-              <div className="content">{item.answer}</div>
-            </div>
-          ))}
-        </section>
-        <section className="accordion">
-          {info_data2.map((item, i) => (
-            <div className="item">
-              <div className="title">
-                <h2>{item.question}</h2>
+            ))}
+          </section>
+          <section className="accordion">
+            <span>
+              <h2>Для сертифицированных организаций:</h2>
+            </span>
+            {info_data2.map((item, i) => (
+              <div className="item" onClick={() => toggle2(i)}>
+                <div className="title">
+                  <h2>{item.question}</h2>
+                  <span>{selected2 === i ? "-" : "+"}</span>
+                </div>
+                <div className={selected2 === i ? "content show" : "content"}>{item.answer}</div>
               </div>
-              <div className="content">{item.answer}</div>
-            </div>
-          ))}
+            ))}
+          </section>
         </section>
       </main>
       <Footer />
