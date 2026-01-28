@@ -109,7 +109,10 @@ const Info = () => {
                   <h2>{item.question}</h2>
                   <span>{selected2 === i ? "-" : "+"}</span>
                 </div>
-                <div className={selected2 === i ? "content show" : "content"}>{item.answer}</div>
+                <div className={selected2 === i ? "content show" : "content"}>
+                  {}
+                  {item.answer}
+                </div>
               </div>
             ))}
           </section>
