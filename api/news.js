@@ -1,13 +1,15 @@
 import mysql from "mysql2/promise";
 
 export default async function handler(req, res) {
-  // CORS (если будешь дергать с другого домена — можно оставить, не мешает)
+  // CORS
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Methods", "GET,OPTIONS");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type");
 
   if (req.method === "OPTIONS") return res.status(200).end();
-  if (req.method !== "GET") return res.status(405).json({ error: "Method not allowed" });
+  if (req.method !== "GET") {
+    return res.status(405).json({ error: "Method not allowed" });
+  }
 
   const id = (req.query?.id ?? "all").toString();
 
@@ -22,12 +24,13 @@ export default async function handler(req, res) {
     });
 
     let rows;
+
     if (id === "all") {
       const [r] = await conn.execute("SELECT * FROM news");
       rows = r;
     } else {
-      const idInt = Number(id) || 0;
-      const [r] = await conn.execute("SELECT * FROM news WHERE id = ?", [idInt]);
+      const idInt = Number(id);
+      const [r] = await conn.execute("SELECT * FROM news WHERE news_id = ?", [idInt]);
       rows = r;
     }
 
