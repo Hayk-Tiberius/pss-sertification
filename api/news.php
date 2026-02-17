@@ -16,7 +16,7 @@ $user = "gb_gbpss2";
 $pass = "B-h9TzRRESXR";
 $db   = "gb_gbpss2";
 
-// ВАЖНО: пароль уже светился — смени его в панели 1gb.
+
 mysqli_report(MYSQLI_REPORT_OFF);
 
 try {
