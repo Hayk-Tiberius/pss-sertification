@@ -15,6 +15,7 @@ import Partners from "./Pages/company pages/Partners.jsx";
 import QualityManagment from "./Pages/sertification pages/QualityManagment.jsx";
 import EcologyManagment from "./Pages/sertification pages/EcologyManagment.jsx";
 import SecurityManagment from "./Pages/sertification pages/SecurityManagment.jsx";
+import NewsBack from "./back-end/NewsBack.jsx";
 
 const PSSNavigation = () => (
   <Router>
@@ -33,6 +34,7 @@ const PSSNavigation = () => (
       <Route path="/QualityManagment" element={<QualityManagment />} />
       <Route path="/EcologyManagment" element={<EcologyManagment />} />
       <Route path="/SecurityManagment" element={<SecurityManagment />} />
+      <Route path="/news/:id" element={<NewsBack />} />
     </Routes>
   </Router>
 );
