@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Main from "./Main.jsx";
 import Contact from "./Pages/Contact.jsx";
 import Applications from "./Pages/Applications.jsx";
+import Admin from "./Pages/Admin.jsx";
 import Company from "./Pages/Company.jsx";
 import Info from "./Pages/Info.jsx";
 import Sertification from "./Pages/Sertification.jsx";
@@ -31,6 +32,7 @@ const PSSNavigation = () => (
       <Route path="/Policy" element={<Policy />} />
       <Route path="/Structure" element={<Structure />} />
       <Route path="/Partners" element={<Partners />} />
+      <Route path="/Admin" element={<Admin />} />
       <Route path="/QualityManagment" element={<QualityManagment />} />
       <Route path="/EcologyManagment" element={<EcologyManagment />} />
       <Route path="/SecurityManagment" element={<SecurityManagment />} />

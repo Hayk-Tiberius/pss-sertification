@@ -29,7 +29,7 @@ const Header = () => {
         <Link to="/Contact">
           <span className="menu__hover">Контакты</span>
         </Link>
-        <Link to="/Contact">
+        <Link to="/Admin">
           <span className="menu__hover">Админ</span>
         </Link>
       </div>
