@@ -17,6 +17,9 @@ const Header = () => {
         </Link>
       </div>
       <div className="menu">
+        <Link to="/Sertification">
+          <span className="menu__hover">О сертификации</span>
+        </Link>
         <Link to="/Company">
           <span className="menu__hover">О компании</span>
         </Link>
@@ -28,9 +31,6 @@ const Header = () => {
         </Link>
         <Link to="/Contact">
           <span className="menu__hover">Контакты</span>
-        </Link>
-        <Link to="/Admin">
-          <span className="menu__hover">Админ</span>
         </Link>
       </div>
       <div className="login_button">
