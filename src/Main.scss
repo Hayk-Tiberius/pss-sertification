@@ -173,6 +173,12 @@ li {
 
 //СТРАНИЦА "О Сертификации"
 
+.sertification_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
 .sertification_title {
   font-size: 1.5rem;
   display: flex;
@@ -182,15 +188,22 @@ li {
   align-items: center;
 }
 
-.sertification_list {
+.sertification_items {
+  display: flex;
   justify-content: center;
-  text-decoration: none;
-  list-style: none;
-  display: grid;
-  width: 100%;
-  font-size: 1.1rem;
-  margin-bottom: 6vh;
+  align-items: center;
+  text-align: center;
 }
+
+// .sertification_list {
+//   justify-content: center;
+//   text-decoration: none;
+//   list-style: none;
+//   display: grid;
+//   width: 100%;
+//   font-size: 1.1rem;
+//   margin-bottom: 6vh;
+// }
 
 // Страница о Аккредитации
 

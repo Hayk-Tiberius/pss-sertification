@@ -1,4 +1,4 @@
-import { useState } from "react";
+// import { useState } from "react";
 import Header from "../tools/Header";
 import Footer from "../tools/Footer";
 import File from "../../src/components/img/main__img/file_logo.png";
@@ -14,7 +14,7 @@ import politic_distance from "../components/files/serification/politic_distance.
 const files = [
   { name: "Порядок жалоб", link: poryadok_zhalob },
   { name: "Схема сертификации", link: sertification_schema },
-  { name: "Политика конфиденциальности", link: politic_conf },
+  { name: "Конфиденциальность", link: politic_conf },
   { name: "Политика невовлеченности", link: politic_non_involve },
   { name: "Политика отмены", link: politic_cancel },
   { name: "Политика согласования", link: politic_accordance },
@@ -22,15 +22,15 @@ const files = [
 ];
 
 const Sertification = () => {
-  const [index, setIndex] = useState(0);
+  // const [index, setIndex] = useState(0);
 
-  function Prev() {
-    index > files.length - files.length ? setIndex(index - 1) : setIndex(files.length - 3);
-  }
+  // function Prev() {
+  //   index > files.length - files.length ? setIndex(index - 1) : setIndex(files.length - 3);
+  // }
 
-  function Next() {
-    index + 2 < files.length - 1 ? setIndex(index + 1) : setIndex(0);
-  }
+  // function Next() {
+  //   index + 2 < files.length - 1 ? setIndex(index + 1) : setIndex(0);
+  // }
 
   return (
     <>
@@ -69,7 +69,105 @@ const Sertification = () => {
             flexDirection: "column",
           }}
         >
-          <div style={{ display: "flex", paddingTop: "1.2rem" }}>
+          <div className="sertification_grid">
+            <div className="sertification_items">
+              <a
+                href={files[0].link}
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.open(files[0].link, "_blank");
+                }}
+              >
+                <img src={File} style={{ width: "12rem" }} alt="File_img" />
+                {files[0].name}
+              </a>
+            </div>
+            <div className="sertification_items">
+              <a
+                href={files[1].link}
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.open(files[1].link, "_blank");
+                }}
+              >
+                <img src={File} style={{ width: "12rem" }} alt="File_img" />
+                {files[1].name}
+              </a>
+            </div>
+            <div className="sertification_items">
+              <a
+                href={files[2].link}
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.open(files[2].link, "_blank");
+                }}
+              >
+                <img src={File} style={{ width: "12rem" }} alt="File_img" />
+                {files[2].name}
+              </a>
+            </div>
+            <div className="sertification_items">
+              <a
+                href={files[3].link}
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.open(files[3].link, "_blank");
+                }}
+              >
+                <img src={File} style={{ width: "12rem" }} alt="File_img" />
+                {files[3].name}
+              </a>
+            </div>
+            <div className="sertification_items">
+              <a
+                href={files[4].link}
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.open(files[4].link, "_blank");
+                }}
+              >
+                <img src={File} style={{ width: "12rem" }} alt="File_img" />
+                {files[4].name}
+              </a>
+            </div>
+            <div className="sertification_items">
+              <a
+                href={files[5].link}
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.open(files[5].link, "_blank");
+                }}
+              >
+                <img src={File} style={{ width: "12rem" }} alt="File_img" />
+                {files[5].name}
+              </a>
+            </div>
+            <div className="sertification_items">
+              <a
+                href={files[6].link}
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.open(files[6].link, "_blank");
+                }}
+              >
+                <img src={File} style={{ width: "12rem" }} alt="File_img" />
+                {files[6].name}
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <Footer />
+    </>
+  );
+};
+
+export default Sertification;
+
+/* Slider */
+
+/* <div style={{ display: "flex", paddingTop: "1.2rem" }}>
             <div>
               <a
                 href={files[index].link}
@@ -108,7 +206,7 @@ const Sertification = () => {
             </div>
           </div>
           <div style={{ display: "flex", justifyContent: "space-between", paddingTop: "1.2rem" }}>
-            <button
+            {/* <button
               onClick={Prev}
               style={{
                 color: "white",
@@ -140,13 +238,5 @@ const Sertification = () => {
             >
               <span style={{ lineHeight: "1rem" }}>Дальше</span>
             </button>
-          </div>
-        </section>
-      </main>
 
-      <Footer />
-    </>
-  );
-};
-
-export default Sertification;
+ </div> */
