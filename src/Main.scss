@@ -172,27 +172,42 @@ li {
 }
 
 //СТРАНИЦА "О Сертификации"
-
-.sertification_grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+.sertification_main {
+  height: 87.3%;
+  display: flex;
+  justify-content: space-between;
 }
 
-.sertification_title {
-  font-size: 1.5rem;
+.sertification_section {
+  width: 100%;
+
   display: flex;
   justify-content: center;
-  margin-top: 8vh;
-  margin-bottom: 3vh;
-  align-items: center;
+}
+
+.sertification_grid {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
 }
 
 .sertification_items {
   display: flex;
   justify-content: center;
+}
+
+.sertification_items a {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   text-align: center;
+}
+
+.sertification_items img {
+  width: 8rem;
+  height: 8rem;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 // .sertification_list {

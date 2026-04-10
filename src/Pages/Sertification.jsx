@@ -12,13 +12,22 @@ import politic_accordance from "../components/files/serification/politic_accorda
 import politic_distance from "../components/files/serification/politic_distance.pdf";
 
 const files = [
-  { name: "Порядок жалоб", link: poryadok_zhalob },
-  { name: "Схема сертификации", link: sertification_schema },
-  { name: "Конфиденциальность", link: politic_conf },
-  { name: "Политика невовлеченности", link: politic_non_involve },
-  { name: "Политика отмены", link: politic_cancel },
-  { name: "Политика согласования", link: politic_accordance },
-  { name: "Политика дистанции", link: politic_distance },
+  { name: "Схема сертификации системы менеджмента.", link: sertification_schema },
+  {
+    name: "Порядок рассмотрения жалоб/апелляций на решения органа по сертификации.",
+    link: poryadok_zhalob,
+  },
+  { name: "Политика конфиденциальности.", link: politic_conf },
+  {
+    name: "Политика обеспечивающая не дискриминационный доступ к услугам по подтверждению соответсвия.",
+    link: politic_accordance,
+  },
+  { name: "Политика дистанционной работы.", link: politic_distance },
+  {
+    name: "Политика приостановления, отмены действия сертификатов и сужение области сертификации.",
+    link: politic_cancel,
+  },
+  { name: "Политика обеспечения беспристрастности.", link: politic_non_involve },
 ];
 
 const Sertification = () => {
@@ -35,7 +44,7 @@ const Sertification = () => {
   return (
     <>
       <Header />
-      <main>
+      <main className="sertification_main">
         <span className="sertification_title">
           НОРМАТИВНЫЕ ДОКУМЕНТЫ, ИСПОЛЬЗУЕМЫЕ ПРИ ВЫПОЛНЕНИИ РАБОТ ПО СЕРТИФИКАЦИИ СИСТЕМ
           МЕНЕДЖМЕНТА
@@ -55,20 +64,7 @@ const Sertification = () => {
             и сертификацию систем менеджмента
           </li>
         </div>
-        <section
-          style={{
-            textAlign: "justify",
-            width: "50%",
-            border: "0.1rem white solid",
-            boxShadow: "0 0 3rem 0.4rem rgba(0,0,0,0.3)",
-            fontSize: "1.11rem",
-            overflow: "hidden",
-            padding: "0rem 2rem 2rem 2rem",
-            borderRadius: "3rem",
-            display: "flex",
-            flexDirection: "column",
-          }}
-        >
+        <section className="sertification_section">
           <div className="sertification_grid">
             <div className="sertification_items">
               <a
@@ -78,7 +74,7 @@ const Sertification = () => {
                   window.open(files[0].link, "_blank");
                 }}
               >
-                <img src={File} style={{ width: "12rem" }} alt="File_img" />
+                <img src={File} style={{ width: "8rem" }} alt="File_img" />
                 {files[0].name}
               </a>
             </div>
@@ -90,7 +86,7 @@ const Sertification = () => {
                   window.open(files[1].link, "_blank");
                 }}
               >
-                <img src={File} style={{ width: "12rem" }} alt="File_img" />
+                <img src={File} style={{ width: "8rem" }} alt="File_img" />
                 {files[1].name}
               </a>
             </div>
@@ -102,7 +98,7 @@ const Sertification = () => {
                   window.open(files[2].link, "_blank");
                 }}
               >
-                <img src={File} style={{ width: "12rem" }} alt="File_img" />
+                <img src={File} style={{ width: "8rem" }} alt="File_img" />
                 {files[2].name}
               </a>
             </div>
@@ -114,7 +110,7 @@ const Sertification = () => {
                   window.open(files[3].link, "_blank");
                 }}
               >
-                <img src={File} style={{ width: "12rem" }} alt="File_img" />
+                <img src={File} style={{ width: "8rem" }} alt="File_img" />
                 {files[3].name}
               </a>
             </div>
@@ -126,7 +122,7 @@ const Sertification = () => {
                   window.open(files[4].link, "_blank");
                 }}
               >
-                <img src={File} style={{ width: "12rem" }} alt="File_img" />
+                <img src={File} style={{ width: "8rem" }} alt="File_img" />
                 {files[4].name}
               </a>
             </div>
@@ -138,7 +134,7 @@ const Sertification = () => {
                   window.open(files[5].link, "_blank");
                 }}
               >
-                <img src={File} style={{ width: "12rem" }} alt="File_img" />
+                <img src={File} style={{ width: "8rem" }} alt="File_img" />
                 {files[5].name}
               </a>
             </div>
@@ -150,7 +146,7 @@ const Sertification = () => {
                   window.open(files[6].link, "_blank");
                 }}
               >
-                <img src={File} style={{ width: "12rem" }} alt="File_img" />
+                <img src={File} style={{ width: "8rem" }} alt="File_img" />
                 {files[6].name}
               </a>
             </div>
