@@ -199,7 +199,7 @@ const Applications = () => {
                       borderRadius: "1rem",
                       width: "7vw",
                       height: "3.7vh",
-                      background: "#094e00",
+                      background: "#0e7001",
                       border: "none",
                     }}
                   >
