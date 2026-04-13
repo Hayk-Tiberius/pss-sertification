@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../tools/Header.jsx";
 import Footer from "../tools/Footer.jsx";
+import Application_form from "../../src/components/files/serification/Application_form.docx";
 
 import "./Applications.scss";
 import {
@@ -192,7 +193,11 @@ const Applications = () => {
                     Отправить заявку
                   </button>
                   <a
-                    href=""
+                    href={Application_form}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      window.open(Application_form, "_blank");
+                    }}
                     style={{
                       color: "white",
                       cursor: "pointer",
