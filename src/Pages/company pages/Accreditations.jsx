@@ -20,7 +20,17 @@ const Accreditations = () => {
       <main>
         <Header />
         <CompanyHeader />
-        <section>
+        <section
+          style={{
+            width: "100%",
+            height: "12vh",
+            fontSize: "1.8rem",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
           <div className="accredititaon__title">
             Аккредитация в
             <a
@@ -52,7 +62,7 @@ const Accreditations = () => {
                     alignItems: "center",
                   }}
                 >
-                  <img src={File} alt="" style={{ width: "50%", textAlign: "center" }} />
+                  <img src={File} alt="" style={{ width: "74%", textAlign: "center" }} />
                   <span style={{ textAlign: "center" }}>{file.name}</span>
                 </a>
               </div>
