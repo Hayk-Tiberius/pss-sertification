@@ -13,6 +13,7 @@ import CompanyHeader from "./Pages/company pages/CompanyHeader.jsx";
 import Accreditations from "./Pages/company pages/Accreditations.jsx";
 import Policy from "./Pages/company pages/Policy.jsx";
 import Structure from "./Pages/company pages/Structure.jsx";
+import Leadership from "./Pages/company pages/Leadership.jsx";
 import Partners from "./Pages/company pages/Partners.jsx";
 import QualityManagment from "./Pages/sertification pages/QualityManagment.jsx";
 import EcologyManagment from "./Pages/sertification pages/EcologyManagment.jsx";
@@ -32,6 +33,7 @@ const PSSNavigation = () => (
       <Route path="/Accreditations" element={<Accreditations />} />
       <Route path="/Policy" element={<Policy />} />
       <Route path="/Structure" element={<Structure />} />
+      <Route path="/Leadership" element={<Leadership />} />
       <Route path="/Partners" element={<Partners />} />
       <Route path="/Admin" element={<Admin />} />
       <Route path="/Login" element={<Login />} />

@@ -16,7 +16,7 @@ const CompanyHeader = () => {
           <Link to="/Structure">
             <li>Структура</li>
           </Link>
-          <Link to="/CEO">
+          <Link to="/Leadership">
             <li>Руководитель</li>
           </Link>
           <Link to="/Partners">
