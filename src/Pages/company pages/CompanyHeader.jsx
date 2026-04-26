@@ -17,13 +17,10 @@ const CompanyHeader = () => {
             <li>Структура</li>
           </Link>
           <Link to="/Leadership">
-            <li>Руководитель</li>
+            <li>Руководитель и Сотрудники</li>
           </Link>
           <Link to="/Partners">
             <li>Партнеры</li>
-          </Link>
-          <Link to="/Workers">
-            <li>Сотрудники</li>
           </Link>
         </ul>
       </nav>
