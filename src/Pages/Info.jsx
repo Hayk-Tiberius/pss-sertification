@@ -3,6 +3,8 @@ import Header from "../tools/Header.jsx";
 import Footer from "../tools/Footer";
 import "./Info.scss";
 
+import Methology from "../../src/components/files/serification/calculation_methology.pdf";
+
 const info_data1 = [
   {
     question: "Перечень документов для сертификации",
@@ -37,7 +39,19 @@ const info_data1 = [
   },
   {
     question: "Примерная стоимость работ по сертификации систем менеджмента",
-    answer: "....",
+    answer: (
+      <a
+        href={Methology}
+        onClick={(e) => {
+          e.preventDefault();
+          window.open(Methology, "_blank");
+        }}
+      >
+        <span style={{ textDecoration: "underline", color: "blue" }}>
+          Методика расчета стоимости по сертификации
+        </span>
+      </a>
+    ),
   },
   {
     question: "Требования к заявителю",
