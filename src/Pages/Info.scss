@@ -56,7 +56,7 @@
 }
 
 .item {
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   margin-bottom: 0.4vw;
   padding: 0.6vw 1.1vw;
   color: white;
@@ -68,9 +68,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    color: black;
-    border: 0.2vw solid black;
+    background-color: rgb(77, 144, 254);
+    color: rgb;
+    border: 0.2vw solid rgb(77, 144, 254);
     border-radius: 3vw;
     padding: 0.8vw 1.2vw;
     text-align: left;
@@ -79,7 +79,7 @@
   }
 
   .title:hover {
-    background-color: black;
+    background-color: rgb(13, 71, 159);
     color: rgb(233, 233, 233);
     transition: 300ms linear 90ms;
   }

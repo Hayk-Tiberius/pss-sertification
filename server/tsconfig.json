@@ -18,9 +18,9 @@
     "noFallthroughCasesInSwitch": false,
 
     "rootDir": ".",
-    "outDir": "dist",
-    "baseUrl": "./"
+    "outDir": "dist"
   },
-  "include": ["app/**/*", "auth/**/*", "users/**/*"],
+
+  "include": ["app/**/*", "auth/**/*", "users/**/*", "database/**/*"],
   "exclude": ["node_modules", "dist"]
 }
