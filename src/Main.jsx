@@ -8,7 +8,7 @@ import "./Main.scss";
 import video1 from "./components/video/slider1.mp4";
 import video2 from "./components/video/slider2.mp4";
 import video3 from "./components/video/slider3.mp4";
-import profile from "../src/components/img/RON/profile.png";
+import profile from "../src/components/img/RON/25 year  1.png";
 import photo1 from "..//src/components/img/sertificate_img/sys_m_k_inv.png";
 import photo2 from "..//src/components/img/sertificate_img/sys_m_o_z_o_b_t_inv.png";
 import photo3 from "..//src/components/img/sertificate_img/sys_e_m_inv.png";
@@ -21,11 +21,7 @@ const Main = () => {
       <main>
         <section className="slider">
           <div className="video_title">
-            <img
-              src={profile}
-              alt=""
-              style={{ width: "17%", border: "white 0.35rem solid", borderRadius: "15rem" }}
-            />
+            <img src={profile} alt="" style={{ width: "15%" }} />
             <div>
               <span
                 style={{
@@ -35,11 +31,11 @@ const Main = () => {
                   lineHeight: "6rem",
                 }}
               >
-                Ромашко Олег Николаевич
+                ??????? ????? ????????
               </span>{" "}
               <br />
               <span style={{ color: "white", lineHeight: "2rem" }}>
-                Директор, руководитель органа по сертификации <br /> систем менеджмента качества
+                ?????????? ??? ????? ?? ????? ???? <br /> ??????? ??????????? ????
               </span>
               <hr />
               <span style={{ color: "white", lineHeight: "2rem" }}>
