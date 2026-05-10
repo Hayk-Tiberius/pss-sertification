@@ -18,33 +18,46 @@
 
 .header {
   display: flex;
-  justify-self: center;
-  justify-content: space-evenly;
-  gap: 1.5vw;
-
-  span {
-    font-size: 1.5rem;
-  }
+  align-items: center;
+  justify-content: center;
+  gap: 4vw;
 
   .logo {
-    .logo img {
+    width: auto;
+    flex-shrink: 0;
+
+    a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      flex-direction: column;
+      gap: 1.2vh;
+    }
+
+    img {
+      width: 10vw !important;
+      height: auto;
       display: block;
     }
 
     .logo__title {
       display: block;
+      width: auto;
+      margin-left: 10px;
+      font-weight: 900;
       font-family: MontserratR;
-      line-height: 1.8rem;
+      font-size: 0.8vw;
+      line-height: 1.2;
+      color: black;
     }
   }
 
   .menu {
+    display: flex;
     align-items: center;
     justify-content: center;
-    display: flex;
-    height: 10.2vh;
-
     gap: 2.5vw;
+    height: 10.2vh;
 
     .menu__hover {
       position: relative;
@@ -78,10 +91,5 @@
       width: 100%;
       left: 0;
     }
-  }
-
-  .menu span {
-    font-family: MontserratM;
-    margin-left: 4em;
   }
 }

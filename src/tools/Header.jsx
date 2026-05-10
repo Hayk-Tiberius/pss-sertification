@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../components/img/pss_logo.svg";
+import logo from "../components/img/pss_logo1.png";
 import { Link } from "react-router-dom";
 import "../../src/Header.scss";
 
@@ -8,12 +8,9 @@ const Header = () => {
     <header className="header">
       <div className="logo">
         <Link to="/">
-          <img src={logo} alt="logo" />
-          <span className="logo__title">
-            ПРОМСТРОЙ-
-            <br />
-            сертификации
-          </span>
+          <img src={logo} alt="logo" style={{ width: "30%" }} />
+
+          <span className="logo__title">ПРОМСТРОЙ-Cертификации</span>
         </Link>
       </div>
       <div className="menu">
