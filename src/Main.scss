@@ -65,15 +65,17 @@ li {
 /////////// Кнопка Логин-панели ////////
 
 .login_button {
-  border: 0.2rem solid black;
+  border: 0.2rem solid rgb(77, 144, 254);
   border-radius: 3rem;
   padding: 1.2rem;
   font-size: 2rem;
   font-family: MontserratM;
+  background-color: rgb(77, 144, 254);
+  color: white;
 }
 
 .login_button:hover {
-  background-color: black;
+  background-color: rgb(13, 71, 159);
   color: rgb(233, 233, 233);
   transition: 250ms linear 90ms;
   cursor: pointer;
@@ -101,15 +103,17 @@ li {
   align-items: center;
 
   .sertification__title {
-    border: 0.3rem solid black;
+    border: 0.3rem solid rgb(77, 144, 254);
+    background-color: rgb(77, 144, 254);
     border-radius: 3rem;
     padding: 1.2rem;
     font-size: 2rem;
     font-family: MontserratM;
+    color: white;
   }
 
   .sertification__title:hover {
-    background-color: black;
+    background-color: rgb(13, 71, 159);
     color: rgb(233, 233, 233);
     transition: 250ms linear 90ms;
   }
