@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+
 import Header from "../tools/Header.jsx";
 import Footer from "../tools/Footer";
 import "./Info.scss";
@@ -238,6 +240,14 @@ const info_data2 = [
       </>
     ),
   },
+  {
+    question: "Оформить заявку",
+    answer: (
+      <>
+        <Link to="Applications.jsx">Оформить</Link>
+      </>
+    ),
+  },
 ];
 
 const Info = () => {
@@ -296,7 +306,11 @@ const Info = () => {
             <h2 className="accordion__header">Для сертифицированных организаций:</h2>
 
             {info_data2.map((item, i) => (
-              <div className="item" onClick={() => toggle2(i)} key={i}>
+              <div
+                className={`item ${item.question === "Оформить заявку" ? "item--application" : ""}`}
+                onClick={() => toggle2(i)}
+                key={i}
+              >
                 <div className="title">
                   <h2>{item.question}</h2>
                   <span>{selected2 === i ? "-" : "+"}</span>
