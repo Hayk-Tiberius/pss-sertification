@@ -8,7 +8,7 @@ import "./Main.scss";
 import video1 from "./components/video/slider1.mp4";
 import video2 from "./components/video/slider2.mp4";
 import video3 from "./components/video/slider3.mp4";
-import profile from "../src/components/img/RON/25 year  1.png";
+import profile from "../src/components/img/RON/25year.png";
 import photo1 from "..//src/components/img/sertificate_img/sys_m_k_inv.png";
 import photo2 from "..//src/components/img/sertificate_img/sys_m_o_z_o_b_t_inv.png";
 import photo3 from "..//src/components/img/sertificate_img/sys_e_m_inv.png";
@@ -21,7 +21,7 @@ const Main = () => {
       <main>
         <section className="slider">
           <div className="video_title">
-            <img src={profile} alt="" style={{ width: "15%" }} />
+            <img src={profile} alt="" style={{ width: "12%" }} />
             <div>
               <span
                 style={{
@@ -31,16 +31,12 @@ const Main = () => {
                   lineHeight: "6rem",
                 }}
               >
-                ??????? ????? ????????
+                ПРОМСТРОЙ-Сертификация
               </span>{" "}
               <br />
               <span style={{ color: "white", lineHeight: "2rem" }}>
-                ?????????? ??? ????? ?? ????? ???? <br /> ??????? ??????????? ????
-              </span>
-              <hr />
-              <span style={{ color: "white", lineHeight: "2rem" }}>
-                Сертификация и независимая оценка <br />
-                в промышленности и строительстве <br />
+                Сертификация систем менеджмента и независимая <br /> оценка в промышленности и
+                строительстве. <br />
                 тел. +7(499)578-26-59
               </span>
             </div>

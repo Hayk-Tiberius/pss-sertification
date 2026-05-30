@@ -62,7 +62,7 @@ const Accreditations = () => {
                     alignItems: "center",
                   }}
                 >
-                  <img src={File} alt="" style={{ width: "74%", textAlign: "center" }} />
+                  <img src={File} alt="" style={{ width: "7vw", textAlign: "center" }} />
                   <span style={{ textAlign: "center" }}>{file.name}</span>
                 </a>
               </div>
