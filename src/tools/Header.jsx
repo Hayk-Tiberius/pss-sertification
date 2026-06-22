@@ -17,6 +17,9 @@ const Header = () => {
         <Link to="/Sertification">
           <span className="menu__hover">О сертификации</span>
         </Link>
+        <Link to="/Procedure">
+          <span className="menu__hover">Процедуры</span>
+        </Link>
         <Link to="/Company">
           <span className="menu__hover">О компании</span>
         </Link>

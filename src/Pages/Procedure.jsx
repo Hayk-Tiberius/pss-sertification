@@ -1,0 +1,251 @@
+// import { useState } from "react";
+import Header from "../tools/Header";
+import Footer from "../tools/Footer";
+import File from "../../src/components/img/main__img/file_logo.png";
+
+import poryadok_zhalob from "../components/files/serification/poryadok_zhalob.pdf";
+import sertification_schema from "../components/files/serification/sertification_schema.pdf";
+import politic_conf from "../components/files/serification/politic_conf.pdf";
+import politic_non_involve from "../components/files/serification/politic_non_invol.pdf";
+import politic_cancel from "../components/files/serification/politic_cancel.pdf";
+import politic_accordance from "../components/files/serification/politic_accordance.pdf";
+import politic_distance from "../components/files/serification/politic_distance.pdf";
+
+const files = [
+  { name: "Схема сертификации системы менеджмента.", link: sertification_schema },
+  {
+    name: "Порядок рассмотрения жалоб/апелляций на решения органа по сертификации.",
+    link: poryadok_zhalob,
+  },
+  { name: "Политика конфиденциальности.", link: politic_conf },
+  {
+    name: "Политика обеспечивающая не дискриминационный доступ к услугам по подтверждению соответсвия.",
+    link: politic_accordance,
+  },
+  { name: "Политика дистанционной работы.", link: politic_distance },
+  {
+    name: "Политика приостановления, отмены действия сертификатов и сужение области сертификации.",
+    link: politic_cancel,
+  },
+  { name: "Политика обеспечения беспристрастности.", link: politic_non_involve },
+];
+
+const Procedure = () => {
+  // const [index, setIndex] = useState(0);
+
+  // function Prev() {
+  //   index > files.length - files.length ? setIndex(index - 1) : setIndex(files.length - 3);
+  // }
+
+  // function Next() {
+  //   index + 2 < files.length - 1 ? setIndex(index + 1) : setIndex(0);
+  // }
+
+  return (
+    <>
+      <Header />
+      <main className="sertification_main">
+        <span className="sertification_title">
+          НОРМАТИВНЫЕ ДОКУМЕНТЫ, ИСПОЛЬЗУЕМЫЕ ПРИ ВЫПОЛНЕНИИ РАБОТ ПО СЕРТИФИКАЦИИ СИСТЕМ
+          МЕНЕДЖМЕНТА
+        </span>
+        <div className="sertification_list">
+          <li>ГОСТ Р ИСО 9001-2015 Системы менеджмента качества. Требования</li>
+          <li>
+            ГОСТ Р ИСО 14001-2016 Системы экологического менеджмента. Требования и руководство по
+            применению
+          </li>
+          <li>
+            ГОСТ Р ИСО 45001-2020. Системы менеджмента безопасности труда и охраны здоровья.
+            Требования и руководство по применению.
+          </li>
+          <li>
+            ГОСТ Р ИСО/МЭК 17021-1-2017 Оценка соответствия. Требования к органам, проводящим аудит
+            и сертификацию систем менеджмента.
+            <br /> Часть 1. Требования. ГОСТ Р ИСО/МЭК 17021-1 2017
+          </li>
+          <li>
+            ГОСТ Р ИСО/МЭК 17021-2-2021 Оценка соответствия. Требования к органам, проводящим аудит
+            и сертификацию систем менеджмента.
+            <br /> Часть 2. Требования компетентности для проведения аудитов и сертификации систем
+            экологического менеджмента. ГОСТ Р ИСО/МЭК 17021-2-2021
+          </li>
+          <li>
+            ГОСТ Р ИСО/МЭК 17021-3-2021 Оценка соответствия. Требования к органам, проводящим аудит
+            и сертификацию систем менеджмента.
+            <br /> Часть 3. Требования компетентности для проведения аудита и сертификации систем
+            менеджмента качества. ГОСТ Р ИСО/МЭК 17021-3 2021
+          </li>
+        </div>
+        <section className="sertification_section">
+          <div className="sertification_grid">
+            <div className="sertification_items">
+              <a
+                href={files[0].link}
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.open(files[0].link, "_blank");
+                }}
+              >
+                <img src={File} style={{ width: "8rem" }} alt="File_img" />
+                {files[0].name}
+              </a>
+            </div>
+            <div className="sertification_items">
+              <a
+                href={files[1].link}
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.open(files[1].link, "_blank");
+                }}
+              >
+                <img src={File} style={{ width: "8rem" }} alt="File_img" />
+                {files[1].name}
+              </a>
+            </div>
+            <div className="sertification_items">
+              <a
+                href={files[2].link}
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.open(files[2].link, "_blank");
+                }}
+              >
+                <img src={File} style={{ width: "8rem" }} alt="File_img" />
+                {files[2].name}
+              </a>
+            </div>
+            <div className="sertification_items">
+              <a
+                href={files[3].link}
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.open(files[3].link, "_blank");
+                }}
+              >
+                <img src={File} style={{ width: "8rem" }} alt="File_img" />
+                {files[3].name}
+              </a>
+            </div>
+            <div className="sertification_items">
+              <a
+                href={files[4].link}
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.open(files[4].link, "_blank");
+                }}
+              >
+                <img src={File} style={{ width: "8rem" }} alt="File_img" />
+                {files[4].name}
+              </a>
+            </div>
+            <div className="sertification_items">
+              <a
+                href={files[5].link}
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.open(files[5].link, "_blank");
+                }}
+              >
+                <img src={File} style={{ width: "8rem" }} alt="File_img" />
+                {files[5].name}
+              </a>
+            </div>
+            <div className="sertification_items">
+              <a
+                href={files[6].link}
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.open(files[6].link, "_blank");
+                }}
+              >
+                <img src={File} style={{ width: "8rem" }} alt="File_img" />
+                {files[6].name}
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <Footer />
+    </>
+  );
+};
+
+export default Procedure;
+
+/* Slider */
+
+/* <div style={{ display: "flex", paddingTop: "1.2rem" }}>
+            <div>
+              <a
+                href={files[index].link}
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.open(files[index].link, "_blank");
+                }}
+              >
+                <img src={File} style={{ width: "15rem" }} alt="" />
+                <span>{files[index].name}</span>
+              </a>
+            </div>
+            <div>
+              <a
+                href={files[index + 1].link}
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.open(files[index + 1].link, "_blank");
+                }}
+              >
+                <img src={File} style={{ width: "15rem", textAlign: "center" }} alt="" />
+                <span>{files[index + 1].name}</span>
+              </a>
+            </div>
+            <div>
+              <a
+                href={files[index + 2].link}
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.open(files[index + 2].link, "_blank");
+                }}
+              >
+                <img src={File} style={{ width: "15rem", textAlign: "center" }} alt="" />
+                <span>{files[index + 2].name}</span>
+              </a>
+            </div>
+          </div>
+          <div style={{ display: "flex", justifyContent: "space-between", paddingTop: "1.2rem" }}>
+            {/* <button
+              onClick={Prev}
+              style={{
+                color: "white",
+                cursor: "pointer",
+                borderRadius: "1rem",
+                width: "7vw",
+                height: "3.7vh",
+                background: "#111",
+                border: "none",
+              }}
+              type="submit"
+              name="access_key"
+            >
+              <span style={{ lineHeight: "1rem" }}>Назад</span>
+            </button>
+            <button
+              onClick={Next}
+              style={{
+                color: "white",
+                cursor: "pointer",
+                borderRadius: "1rem",
+                width: "7vw",
+                height: "3.7vh",
+                background: "#111",
+                border: "none",
+              }}
+              type="submit"
+              name="access_key"
+            >
+              <span style={{ lineHeight: "1rem" }}>Дальше</span>
+            </button>
+
+ </div> */

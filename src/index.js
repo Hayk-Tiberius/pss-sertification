@@ -9,6 +9,7 @@ import Login from "./Pages/Admin/Login.jsx";
 import Company from "./Pages/Company.jsx";
 import Info from "./Pages/Info.jsx";
 import Sertification from "./Pages/Sertification.jsx";
+import Procedure from "./Pages/Procedure.jsx";
 import CompanyHeader from "./Pages/company pages/CompanyHeader.jsx";
 import Accreditations from "./Pages/company pages/Accreditations.jsx";
 import Policy from "./Pages/company pages/Policy.jsx";
@@ -29,6 +30,7 @@ const PSSNavigation = () => (
       <Route path="/Company" element={<Company />} />
       <Route path="/Info" element={<Info />} />
       <Route path="/Sertification" element={<Sertification />} />
+      <Route path="/Procedure" element={<Procedure />} />
       <Route path="/CompanyHeader" element={<CompanyHeader />} />
       <Route path="/Accreditations" element={<Accreditations />} />
       <Route path="/Policy" element={<Policy />} />
