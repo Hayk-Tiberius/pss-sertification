@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import Footer from "../tools/Footer";
 import Header from "../tools/Header";
 
 function NewsBack() {
@@ -8,7 +7,7 @@ function NewsBack() {
   const [news, setNews] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:8000/news.php?id=${id}`)
+    fetch(`http://ps-s-test-ru.1gb.ru/api/news.php?id=${id}`)
       .then((response) => response.json())
       .then((data) => setNews(data[0]))
       .catch((err) => console.error("Ошибка:", err));
