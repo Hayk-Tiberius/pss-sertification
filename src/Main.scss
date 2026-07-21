@@ -62,6 +62,35 @@ li {
   opacity: 0.4;
 }
 
+/////////// Кнопка Логин-панели ////////
+
+.login_button {
+  border: 0.2rem solid black;
+  border-radius: 3rem;
+  padding: 1.2rem;
+  font-size: 2rem;
+  font-family: MontserratM;
+}
+
+.login_button:hover {
+  background-color: black;
+  color: rgb(233, 233, 233);
+  transition: 250ms linear 90ms;
+  cursor: pointer;
+}
+
+.login_section {
+  display: flex;
+  width: 33vw;
+  border: 0.2rem solid rgb(255, 255, 255);
+  border-radius: 3rem;
+  box-shadow: 0 0 3rem 0.4rem rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  line-height: 1.7rem;
+  padding: 2rem;
+  text-align: justify;
+}
+
 ////////////////////////////////////////////
 
 //
