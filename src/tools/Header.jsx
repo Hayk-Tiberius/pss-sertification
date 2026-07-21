@@ -33,8 +33,8 @@ const Header = () => {
           <span className="menu__hover">Админ</span>
         </Link>
       </div>
-      <div>
-        <button>Войти</button>
+      <div className="login_button">
+        <Link to="/Login"> Войти</Link>
       </div>
     </header>
   );
