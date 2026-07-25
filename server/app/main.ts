@@ -8,7 +8,7 @@ async function bootstrap() {
   app.enableCors({
     origin: "http://localhost:5173",
   });
-
+  app.setGlobalPrefix("api");
   await app.listen(3000);
 
   console.log("Server started: http://localhost:3000");
