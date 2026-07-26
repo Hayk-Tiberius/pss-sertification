@@ -21,6 +21,6 @@
     "outDir": "dist",
     "baseUrl": "./"
   },
-  "include": ["app/**/*", "auth/**/*"],
+  "include": ["app/**/*", "auth/**/*", "users/**/*"],
   "exclude": ["node_modules", "dist"]
 }

@@ -2,5 +2,5 @@ import { AuthService } from "./auth.service";
 export declare class AuthController {
     private readonly authService;
     constructor(authService: AuthService);
-    hi(): string;
+    signIn(signInDto: Record<string, any>): Promise<any>;
 }

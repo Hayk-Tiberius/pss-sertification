@@ -1,3 +1,6 @@
+import { UsersService } from "../users/users.service";
 export declare class AuthService {
-    hi(): string;
+    private readonly usersService;
+    constructor(usersService: UsersService);
+    signIn(username: string, pass: string): Promise<any>;
 }
