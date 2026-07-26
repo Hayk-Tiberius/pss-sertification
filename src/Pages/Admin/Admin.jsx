@@ -6,6 +6,7 @@ const Admin = () => {
   return (
     <>
       <Header />
+      hi
       <Footer />
     </>
   );
