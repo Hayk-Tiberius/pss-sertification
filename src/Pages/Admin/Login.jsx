@@ -1,5 +1,8 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Header from "../../tools/Header";
+import { UserOutlined, CheckCircleOutlined } from "@ant-design/icons";
+import { Input } from "antd";
 
 const Login = () => {
   const [username, setUsername] = useState("");
@@ -40,27 +43,46 @@ const Login = () => {
   };
 
   return (
-    <main className="main_section">
-      <section className="login_section">
-        <form onSubmit={handleSubmit}>
-          <input
-            type="text"
-            placeholder="Логин"
-            value={username}
-            onChange={(event) => setUsername(event.target.value)}
-          />
-
-          <input
-            type="password"
-            placeholder="Пароль"
-            value={password}
-            onChange={(event) => setPassword(event.target.value)}
-          />
-
-          <button type="submit">Войти</button>
-        </form>
-      </section>
-    </main>
+    <>
+      <Header />
+      <main className="main_section">
+        <section className="login_section">
+          <span>Панель Администратора</span>
+          <form onSubmit={handleSubmit} className="login_form">
+            <Input
+              type="text"
+              placeholder="Логин"
+              prefix={<UserOutlined />}
+              value={username}
+              onChange={(event) => setUsername(event.target.value)}
+            />
+            <br />
+            <Input
+              type="password"
+              placeholder="Пароль"
+              prefix={<CheckCircleOutlined />}
+              value={password}
+              onChange={(event) => setPassword(event.target.value)}
+            />
+            <br />
+            <button
+              style={{
+                color: "white",
+                cursor: "pointer",
+                borderRadius: "1rem",
+                width: "7vw",
+                height: "3.7vh",
+                background: "#111",
+                border: "none",
+              }}
+              type="submit"
+            >
+              Войти
+            </button>
+          </form>
+        </section>
+      </main>
+    </>
   );
 };
 

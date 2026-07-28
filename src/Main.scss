@@ -215,3 +215,23 @@ li {
   grid-template-rows: 1fr;
   justify-content: space-between;
 }
+
+// Login section
+.main_section {
+  height: 100%;
+}
+
+.login_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 30vw;
+  height: 30vh;
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    align-items: center;
+  }
+}
