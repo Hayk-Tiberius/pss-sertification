@@ -6,5 +6,9 @@
     padding: 1em;
     width: 30vw;
     height: 80vh;
+    .button_items {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 }

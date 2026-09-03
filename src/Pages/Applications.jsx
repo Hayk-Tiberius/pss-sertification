@@ -174,22 +174,39 @@ const Applications = () => {
                   prefix={<TeamOutlined />}
                   style={{ marginBottom: "1em" }}
                 />
-                <button
-                  style={{
-                    color: "white",
-                    cursor: "pointer",
-                    borderRadius: "1rem",
-                    width: "7vw",
-                    height: "3.7vh",
-                    background: "#111",
-                    border: "none",
-                  }}
-                  type="submit"
-                  name="access_key"
-                  value="b83076a4-0aa2-4eda-b923-33e119d8afcb"
-                >
-                  Отправить заявку
-                </button>
+                <div className="button_items">
+                  <button
+                    style={{
+                      color: "white",
+                      cursor: "pointer",
+                      borderRadius: "1rem",
+                      width: "7vw",
+                      height: "3.7vh",
+                      background: "#111",
+                      border: "none",
+                    }}
+                    type="submit"
+                    name="access_key"
+                    value="b83076a4-0aa2-4eda-b923-33e119d8afcb"
+                  >
+                    Отправить заявку
+                  </button>
+                  <a
+                    href=""
+                    style={{
+                      color: "white",
+                      cursor: "pointer",
+                      borderRadius: "1rem",
+                      width: "7vw",
+                      height: "3.7vh",
+                      background: "#094e00",
+                      border: "none",
+                    }}
+                  >
+                    Форма заявки
+                  </a>
+                </div>
+
                 <span>{result}</span>
               </div>
             </div>
