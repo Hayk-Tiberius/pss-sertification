@@ -8,6 +8,23 @@
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+  h3 {
+    font-size: 1.2vw;
+    margin: 1vw 0 0.5vw;
+  }
+
+  ul {
+    padding-left: 2vw;
+  }
+
+  strong {
+    font-weight: 700;
+  }
+
+  li {
+    line-height: 1.2vw;
+  }
 }
 
 .content.show {
@@ -15,22 +32,44 @@
   transition: max-height 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
+.accordion {
+  width: 50%;
+}
+
+.accordion__header {
+  font-size: 1.5vw;
+  line-height: 1.2;
+  height: 4vw;
+  margin: 0 0 1vw 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .item {
   background-color: rgb(255, 255, 255);
-
-  margin-bottom: 0.4rem;
-  padding: 0.6rem 1.1rem;
+  margin-bottom: 0.4vw;
+  padding: 0.6vw 1.1vw;
   color: white;
+
   .title {
+    height: 5vw;
+    box-sizing: border-box;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     color: black;
-    border: 0.2rem solid black;
-    border-radius: 3rem;
-    padding: 1rem;
+    border: 0.2vw solid black;
+    border-radius: 3vw;
+    padding: 0.8vw 1.2vw;
+    text-align: left;
+
     cursor: pointer;
   }
+
   .title:hover {
     background-color: black;
     color: rgb(233, 233, 233);
